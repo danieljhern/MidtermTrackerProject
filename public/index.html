@@ -4,9 +4,18 @@
 <head>
     <meta charset="utf-8">
     <title>notes</title>
-    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
-    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
-    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>    
+    <link rel="stylesheet" href="stylesheets/themes/my-custom-theme.min.css" />
+    <link rel="stylesheet" href="stylesheets/themes/jquery.mobile.icons.min.css" />
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>  
+
+    
+   
+   
+   
+   
+   
     <script src="/javascripts/main.js"></script>
     <link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
 
@@ -62,8 +71,8 @@
         <h2>My Midterms site</h2>
     </div>   
     <!-- header -->
-    <div data-role="header" data-theme='b'>
-        <div data-role="navbar" data-theme='b'>
+    <div data-role="header" data-theme='a'>
+        <div data-role="navbar" data-theme='a'>
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#add-candidate">Add Custom Candidate</a></li>
@@ -81,12 +90,18 @@
             for each district, click "Select District" below. </h3>
             <br />
         <label for="select-type"></label>
-        <select name="select-district" id='select-district' onchange="getSelectedValue();">
+        <select name="select-district" id='select-district'>
             <option value="Select District">Select District</option>
             <option value="1">1</option>
             <option value="2">2</option>
             <option value="3">3</option>
             <option value='4'>4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value='8'>8</option>
+            <option value="9">9</option>
+            <option value='10'>10</option>
         </select>
         <p id="display-current-district"></p>
         <div id="myList">
@@ -94,13 +109,13 @@
             
         </div>
         <br />
-        <button id="myBtn" onclick="addToList()" >add candidates</button>
+        <button id="myBtn">add candidates</button>
         <div id="demo"></div>
 
     </div>
 
     <!-- notes footer -->
-    <div data-role="footer" data-theme='b'>
+    <div data-role="footer" data-theme='a'>
         <h3>Copyright 2021 by Daniel Hernandez</h3>
     </div>
 </div>
@@ -113,7 +128,7 @@
         <h2>My Washington Midterm Site</h2>
     </div>   
     <!-- header -->
-    <div data-role="header" data-theme='b'>
+    <div data-role="header" data-theme='a'>
         <div data-role="navbar" data-theme='a'>
             <ul>
                 <li><a href="#home">home</a></li>               
@@ -127,14 +142,27 @@
 
 
     <!-- content -->
-    <div data-role="content" data-theme='e'>
+    <div data-role="content" data-theme='a'>
         <h2>Enter a new candidate</h2>
         Enter Candidate name <br />
         <input type="text" value="" id="custom-candidate-name" />
         Notes <br />
         <input type="text" value="" id="custom-candidate-notes" />
-        District <br />
-        <input type="text" value="" id="custom-candidate-district">
+        Website <br /> 
+        <input type="text" value="" id="custom-candidate-site">
+        <label for="add-select-district">District </label>
+        <select name="add-select-district" id='add-select-district'>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value='4'>4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value='8'>8</option>
+            <option value="9">9</option>
+            <option value='10'>10</option>
+        </select>
 
                     
         <div class="ui-field-contain">
@@ -146,7 +174,7 @@
             </select>
 
             
-            <input type="button" value="Click To Add Candidate" id="buttonAdd1" data-inline="true" />
+            <input type="button" value="Click To Add Candidate" id="custom-add" data-inline="true" />
             <input type="button" value="Clear Data" id="buttonClear" data-inline="true" />
           </div>
 
@@ -156,7 +184,7 @@
 
 
     <!-- notes footer -->
-    <div data-role="footer" data-theme='b'>
+    <div data-role="footer" data-theme='a'>
         <h3>Copyright 2021 by Daniel Hernandez</h3>
     </div>
 </div>
@@ -170,8 +198,8 @@
         <h2>List Candidates</h2>
     </div>   
     <!-- header -->
-    <div data-role="header" data-theme='b'>
-        <div data-role="navbar" data-theme='b'>
+    <div data-role="header" data-theme='a'>
+        <div data-role="navbar" data-theme='a'>
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#districts">Districts</a></li>
@@ -185,7 +213,7 @@
 
 
     <!-- content -->
-    <div data-role="content" data-theme='e'>
+    <div data-role="content" data-theme='a'>
 
    <!-- <input id="btn" type="button" value="Click for supported candidates"></input>-->
     <!--<button id="btn">Click for supported candidates</button>-->
@@ -193,7 +221,7 @@
           </ul>
     </div>    
     <!-- notes footer -->
-    <div data-role="footer" data-theme='b'>
+    <div data-role="footer" data-theme='a'>
         <h3>Copyright 2021 by Daniel Hernandez</h3>
     </div>
 </div>
@@ -206,8 +234,8 @@
         <h2>My Midterms Site</h2>
     </div>   
     <!-- header -->
-    <div data-role="header" data-theme='b'>
-        <div data-role="navbar" data-theme='b'>
+    <div data-role="header" data-theme='a'>
+        <div data-role="navbar" data-theme='a'>
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#districts">Districts</a></li>
@@ -224,7 +252,7 @@
                   <br />
                   <h3>Register to vote: <a href="https://www.sos.wa.gov/elections/register.aspx">https://www.sos.wa.gov/elections/register.aspx</a></h3>
     <!-- notes footer -->
-    <div data-role="footer" data-theme='b'>
+    <div data-role="footer" data-theme='a'>
         <h3>Copyright 2021 by Daniel Hernandez</h3>
     </div>
 </div>
